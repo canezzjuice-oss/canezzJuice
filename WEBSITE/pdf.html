@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugarcane Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fee7; /* Light green-yellow background */
+        }
+        .text-brown-900 {
+            color: #371b07;
+        }
+        .bg-green-100 {
+            background-color: #dcfce7;
+        }
+        .border-green-300 {
+            border-color: #a7f3d0;
+        }
+        .shadow-lg-brown {
+            box-shadow: 0 10px 15px -3px rgba(55, 27, 7, 0.1), 0 4px 6px -2px rgba(55, 27, 7, 0.05);
+        }
+
+        /* --- Animation Styles --- */
+        /* Apply a class to the image that will animate on scroll */
+        .scroll-animate {
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out; /* Slower and smoother transition */
+        }
+        /* Style for the hover effect on resource cards (optional, but good to keep) */
+        .resource-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 20px -5px rgba(55, 27, 7, 0.15), 0 6px 8px -3px rgba(55, 27, 7, 0.08);
+            background-color: #f0fdf4; /* Slightly lighter on hover */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-md rounded-b-3xl">
+        <div class="container mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between">
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <img src="https://canexidea.wordpress.com/wp-content/uploads/2025/09/screenshot-2025-09-20-113746.png" alt="Sugarcane icon" class="w-12 h-12 rounded-full">
+                <h1 class="text-3xl font-bold text-brown-900">Sugarcane Resources</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 text-brown-900">
+                    <li><a href="index.html" class="text-gray-600 hover:text-brown-900 transition-colors duration-300 font-medium">Home</a></li>
+                    <li><a href="#resources" class="text-gray-600 hover:text-brown-900 transition-colors duration-300 font-medium">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero-section" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-brown-900 mb-4 leading-tight">Your Hub for Sugarcane Knowledge</h2>
+                <p class="text-lg text-gray-700 mb-6">Explore a curated collection of PDFs, research papers, and guides on sugarcane cultivation, processing, and its many uses.</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://canexidea.wordpress.com/wp-content/uploads/2025/09/cane.png" alt="A stylized image of sugarcane" class="w-full max-w-md rounded-xl shadow-lg-brown scroll-animate">
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="py-16 bg-green-100">
+        <div class="container mx-auto px-6">
+            <h3 class="text-center text-3xl font-bold text-brown-900 mb-10">Available PDF Resources</h3>
+            <div id="resource-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">ELSEVIER Food Chemistry:X</h4>
+                    <p class="text-gray-600 mb-4">Combined effect of thermosonication and natural preservatives on the
+quality of sugarcane juice</p>
+                    <a href="1.pdf" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Sugarcane Processing for Biofuel</h4>
+                    <p class="text-gray-600 mb-4">An in-depth analysis of the process of converting sugarcane into clean, renewable biofuel.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">History of Sugarcane in Agriculture</h4>
+                    <p class="text-gray-600 mb-4">A historical overview of sugarcane's role in global agriculture and economy over the centuries.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Advanced Sugarcane Irrigation Techniques</h4>
+                    <p class="text-gray-600 mb-4">A detailed study on modern irrigation systems that optimize water usage and improve crop health.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Sugarcane Pest and Disease Control</h4>
+                    <p class="text-gray-600 mb-4">Strategies for identifying and managing common pests and diseases in sugarcane crops.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Manual Sugarcane Harvesting Guide</h4>
+                    <p class="text-gray-600 mb-4">Best practices and safety guidelines for manual sugarcane harvesting.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">The Economics of Sugar Production</h4>
+                    <p class="text-gray-600 mb-4">An analysis of the global market and economic factors influencing sugar prices.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Soil Management for Sugarcane</h4>
+                    <p class="text-gray-600 mb-4">A guide to preparing and maintaining soil to maximize sugarcane yield.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Innovations in Sugarcane Breeding</h4>
+                    <p class="text-gray-600 mb-4">A review of new sugarcane varieties and breeding techniques.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-green-300 transform transition-all duration-300 hover:scale-105 hover:shadow-lg-brown hover:bg-white-50 resource-card">
+                    <h4 class="text-xl font-semibold text-brown-900 mb-2">Bio-ethanol from Sugarcane</h4>
+                    <p class="text-gray-600 mb-4">A research paper on the efficiency and future of bio-ethanol derived from sugarcane.</p>
+                    <a href="#" class="text-green-600 hover:text-green-800 transition-colors duration-300 font-medium">
+                        View PDF &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-6 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sugarcane Resources. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('a[href="#resources"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('resources').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Select only the image that should animate
+        const heroImage = document.querySelector('.scroll-animate');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            // Calculate scale and opacity based on scroll position
+            const scale = Math.max(0.7, 1 - scrollY / 500); 
+            const opacity = Math.max(0, 1 - scrollY / 400); 
+
+            // Apply the transform and opacity only to the selected image
+            heroImage.style.transform = `scale(${scale})`;
+            heroImage.style.opacity = opacity;
+        });
+    </script>
+
+</body>
+</html>
